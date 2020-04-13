@@ -11,14 +11,14 @@
 # https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/#installing-the-theme
 
 # theme                  : "minimal-mistakes-jekyll"
-# remote_theme             : "mmistakes/minimal-mistakes"
+remote_theme             : mmistakes/minimal-mistakes
 minimal_mistakes_skin    : "dirt" 
 
 # Site Settings
 locale                   : "en-US"
 title                    : "Lucy :)"
 title_separator          : "-"
-subtitle                 : 'github.io"
+subtitle                 : ""
 name                     : "Lucy Ryu"
 description              : "hi!"
 url                      : "https://LucyRyu.github.io"
