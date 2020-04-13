@@ -94,7 +94,7 @@ analytics:
 # Site Author
 author:
   name             : "Lucy"
-  avatar           : "/assets/images/profile.jpg"
+  avatar           : "/assets/images/profile.png"
   bio              : "Hi, **developer** :)"
   location         : "Seoul, South Korea"
   email            : "loveyou_06@naver.com"
