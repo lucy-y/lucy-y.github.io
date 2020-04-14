@@ -1,3 +1,3 @@
-# LucyRyu.github.io
+# lucy-y.github.io
 
 
