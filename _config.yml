@@ -16,9 +16,9 @@ minimal_mistakes_skin    : "dirt"
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Lucy :)"
+title                    : "Lucy"
 title_separator          : "-"
-subtitle                 : ""
+subtitle                 : "Lucy"
 name                     : "Lucy Ryu"
 description              : "hi!"
 url                      : "https://lucy-y.github.io"
