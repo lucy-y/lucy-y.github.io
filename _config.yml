@@ -24,8 +24,8 @@ description              : "hi!"
 url                      : "https://lucy-y.github.io"
 baseurl                  : ""
 repository               : "lucy-y/lucy-y.github.io"
-teaser                   : "/assets/images/500x300.png"
-logo                     : "/assets/images/88x88.png"
+teaser                   : "/assets/images/profile.png"
+logo                     : "/assets/images/profile.png"
 masthead_title           : " "
 # breadcrumbs            : false # true, false (default)
 words_per_minute         : 200
