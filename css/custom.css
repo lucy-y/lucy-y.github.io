@@ -19,6 +19,10 @@ hr {
     margin-top: 0.4rem;
 }
 
+.ml-4 {
+    margin-left: 0.4rem;
+}
+
 .sidebar {
     margin: 0;
     padding: 0;
@@ -33,7 +37,7 @@ hr {
 .content {
     width: auto;
     height: 100vh;
-    margin-left: 30vh;
+    margin-left: 32vh;
     overflow-y: auto;
     color: #000000;
 }
@@ -44,6 +48,14 @@ hr {
         height: auto;
         position: relative;
     }
+
+    .content {
+        width: auto;
+        overflow-y: auto;
+        margin-left: 3vh;
+        color: #000000;
+    }
+
 }
 
 .text-center {
@@ -71,7 +83,10 @@ hr {
 
 .info {}
 
-.title {}
+.title {
+    font-weight: 800;
+    font-size: 1.2rem;
+}
 
 .year {}
 
