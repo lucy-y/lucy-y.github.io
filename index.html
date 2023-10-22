@@ -18,64 +18,224 @@
     <meta property="og:image:height" content="630">
     <!-- og tag end -->
 
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
     <link rel="stylesheet" type="text/css" href="css/custom.css">
+    <link rel="stylesheet" type="text/css" href="css/responsive.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+    <link rel="icon" type="image/x-icon" href="assets/images/profile2.png">
 </head>
 <body>
-    <div>
         <!-- side div start -->
-        <div class="sidebar">
-            <div class="profile">
-                <img src="assets/images/profile.png" alt="profile image" />
-            </div>
-            <div class="grid text-center">
-                <span class="name">Ryu SeungA (Lucy)</span>
-                <span class="info">WEB DEVELOPER</span>
-            </div>
-            <hr>
-            <div class="grid ml-4">
-                <span class="title">CONTACT INFO</span>
-                <div>
-                    <i class="material-icons">alternate_email</i>
-                    <span>loveyou_06@naver.com</span>
+        <div class="sidebar container">   
+            <div class="sidebar-profile mb-4">
+                <div class="col-xs-2 col-lg-12 text-center mt-4">
+                    <img class="img-profile" src="assets/images/profile.png" alt="profile image" />
                 </div>
-                <div>
-                    <i class="material-icons">source</i>
-                    <span>https://github.com/lucy-y</span>
-                </div>
-                <div>
-                    <i class="material-icons">location_on</i>
-                    <span>Seoul, Korea</span>
+                <div class="col-xs-10 col-lg-12">
+                    <div class="grid text-center">
+                        <span class="name">Ryu SeungA (Lucy)</span>
+                        <span class="info">WEB DEVELOPER</span>
+                    </div>
                 </div>
             </div>
-            <div class="mt-4">
-                <span class="title">EDUCATION</span>
-                <div class="mt-4">
-                    <i class="material-icons">school</i>
-                    <span>컴퓨터공학부(전산공학)</span>
+            <hr class="hr-side-info">
+            <div class="side-info-detail mt-4">
+                <div class="grid ml-2">
+                    <span class="title uppercase">Contact Info & Location</span>
+                    <div>
+                        <i class="material-icons">source</i>
+                        <span id="github"></span>
+                    </div>
+                    <div>
+                        <i class="material-icons">location_on</i>
+                        <span>Seoul, Korea</span>
+                    </div>
+                </div>
+                <div class="grid ml-2 mt-4">
+                    <span class="title uppercase">Major Engineering Department</span>
+                    <div class="mt-2">
+                        <i class="material-icons">school</i>
+                        <span>Computer Science</span>
+                    </div>
+                </div>
+                <div class="grid ml-2 mt-4">
+                    <span class="title">바로가기</span>
+                    <div class="mt-2">
+                        <h4 class="badge rounded-pill bg-light text-dark"><a href="#skills">Languages and Tools</a></h4>
+                        <br>
+                        <h4 class="badge rounded-pill bg-light text-dark"><a href="#projects">Projects</a></h4>
+                    </div>
                 </div>
             </div>
+            <br>
         </div>
         <!-- side div end -->
 
         <!-- content div start -->
-        <div class="content">
-            <div class="grid mt-4">
-                <span class="title">자기소개</span>
-                <span>내용</span>
-            </div>
+        <div class="content" id="top">
+            <div class="readme-bg">
+                <div class="grid">
+                    <span class="title">lucy/README.md</span>
+                    <br>
+                    <div class="grid">
+                        <span>안녕하세요. 류승아입니다.</span>
+                        <span>게임이 좋아서 게임에 도움이되는 개발을 하고자 게임 업계 입사하여 커뮤니티, 운영툴 프로젝트를 담당하여 개발하고 있습니다.</span>
+                    </div>
+                </div>
 
-            <div class="grid mt-4">
-                <span class="title">경력</span>
-                <span>내용</span>
-            </div>
+                <hr>
 
-            <div class="grid mt-4">
-                <span class="title">프로젝트</span>
-                <span>내용</span>
+                <div class="grid mt-2" id="skills">
+                    <span class="title">Languages and Tools</span>
+                    <br>
+                    <div class="flex">
+                        <div class="col-6 pl-0">
+                            <div class="skill-bg">
+                                <h5>◦ BACKEND </h5>
+                                <img src="https://img.shields.io/badge/Java-ED8B00?style=flat-square&logo=Java&logoColor=white"/>
+                                <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=Python&logoColor=white"/>
+                                <img src="https://img.shields.io/badge/Spring_Boot-F2F4F9?style=flat-square&logo=spring-boot"/>
+                            </div>
+                            <br/>
+                            <div class="skill-bg">
+                                <h5>◦ FRONTEND </h5>
+                                <img src="https://img.shields.io/badge/HTML-E34F26?style=flat-square&logo=HTML5&logoColor=white"/>
+                                <img src="https://img.shields.io/badge/CSS-1572B6?style=flat-square&logo=CSS3&logoColor=white"/>
+                                <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=JavaScript&logoColor=white"/>
+                                <img src="https://img.shields.io/badge/TypeScript-007ACC?style=flat-square&logo=typescript&logoColor=white"/>
+                                <img src="https://img.shields.io/badge/Vue-4FC08D?style=flat-square&logo=Vue.js&logoColor=white"/>  
+                                <img src="https://img.shields.io/badge/Angular-DD0031?style=flat-square&logo=angular&logoColor=white"/>
+                            </div>
+                            <br/>
+                            <div class="skill-bg">
+                                <h5>◦ DATABASE </h5>
+                                <img src="https://img.shields.io/badge/mysql-4479A1?style=flat-square&logo=mysql&logoColor=white"> 
+                                <img src="https://img.shields.io/badge/mssql-CC2927?style=flat-square&logo=microsoftsqlserver&logoColor=white"> 
+                                <img src="https://img.shields.io/badge/mariaDB-003545?style=flat-square&logo=mariaDB&logoColor=white"> 
+                                <img src="https://img.shields.io/badge/redis-FFCA28?style=flat-square&logo=redis&logoColor=white">
+                            </div>
+                            <br/>
+                            <div class="skill-bg">
+                                <h5>◦ CI/CD </h5>
+                                <img src="https://img.shields.io/badge/git-F05032?style=flat-square&logo=git&logoColor=white">
+                                <img src="https://img.shields.io/badge/gitlab-FC6D26?style=flat-square&logo=gitlab&logoColor=white">
+                                <img src="https://img.shields.io/badge/jenkins-D24939?style=flat-square&logo=jenkins&logoColor=white">
+                                <img src="https://img.shields.io/badge/Subversion-blue?style=flat-square&logo=Subversion&logoColor=white">
+                                
+                            </div>
+                        </div>
+                        <div class="col-6 pl-0">
+                            <div class="skill-bg">
+                                <h5>◦ Office Tool </h5>
+                                <img src="https://img.shields.io/badge/slack-4A154B?style=flat-square&logo=slack&logoColor=white">
+                                <img src="https://img.shields.io/badge/confluence-172B4D?style=flat-square&logo=confluence&logoColor=white">
+                                <img src="https://img.shields.io/badge/jira-0052CC?style=flat-square&logo=jira&logoColor=white">
+                            </div>
+                            <br/>
+                            <div class="skill-bg">
+                                <h5>◦ Tool </h5>
+                                <img src="https://img.shields.io/badge/AWS_stack-FF9900?style=flat-square&logo=amazonaws&logoColor=white"> 
+                                <img src="https://img.shields.io/badge/selenium-43B02A?style=flat-square&logo=selenium&logoColor=white">
+                            </div>
+                            <br/>
+                            <div class="skill-bg">
+                                <h5>◦ STUDYING </h5>
+                                <img src="https://img.shields.io/badge/react-20232A?style=flat-square&logo=react&logoColor=61DAFB">
+                                <img src="https://img.shields.io/badge/rabbitmq-FF6600?style=flat-square&logo=rabbitmq&logoColor=white">
+                                <img src="https://img.shields.io/badge/elasticsearch-005571?style=flat-square&logo=elasticsearch&logoColor=white">
+                                <img src="https://img.shields.io/badge/kibana-005571?style=flat-square&logo=kibana&logoColor=white">
+                                <img src="https://img.shields.io/badge/Apache%20Kafka-000?style=flat-square&logo=apachekafka&logoColor=white">
+                                <img src="https://img.shields.io/badge/Firebase-FFCA28?style=flat-square&logo=firebase&logoColor=black">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="grid mt-2" id="projects">
+                    <span class="title">Projects</span>
+                    <div id="projectDiv">
+                    </div>
+                </div>
             </div>
+            <a class="scroll-to-top">↑</a>
         </div>
         <!-- content div end -->
     </div>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            profile.get();
+
+            const moveTopBtn = document.querySelector(".scroll-to-top");
+            moveTopBtn.addEventListener("click", scrollToTop);
+
+            window.addEventListener('scroll', function() {
+                let button = document.querySelector('.scroll-to-top');
+                if (window.scrollY > 120) { // 스크롤 위치가 100px 이상일 때 버튼 표시
+                    button.style.display = 'block';
+                } else {
+                    button.style.display = 'none';
+                }
+            });
+        });
+        
+        function scrollToTop() {
+            $(window).scrollTop(0);
+        }
+        
+        var profile = {
+            get: function(){
+                fetch('assets/json/profile.json')
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error('Network response was not ok');
+                    }
+                    return response.json();
+                })
+                .then(data => {
+                    profile.setGithub(data.github);
+                    profile.setProject(data.company);
+                })
+                .catch(error => {
+                    console.error('파일 로드 중 오류 발생:', error);
+                });
+            },
+            setGithub: function(url){
+                const github = document.getElementById("github");
+                let link = document.createElement("a");
+                link.textContent = "Github";
+                link.href = url;
+                link.target="_blank";
+                link.style="color: #ffffff";
+                github.appendChild(link);
+            },
+            setProject(projects){
+                const projectDiv = document.getElementById("projectDiv");
+                let companyDiv = document.createElement("div");
+                let html = "<ol>";
+                projects.forEach(f=>{
+                    let company = f.name;
+                    html += "<li>"
+                    html += company;
+                    html += "<ul>";
+                    f.project.forEach(p=>{
+                        html += "<li>";
+                        html += p.name;
+                        html += "</li>"
+                    })
+                    html += "</ul>";
+                    html += "</li>"
+                    
+                })
+                html += "</ol>"
+                companyDiv.innerHTML = html;
+                projectDiv.appendChild(companyDiv);
+            }
+        }
+    </script>
 </body>
 </html>

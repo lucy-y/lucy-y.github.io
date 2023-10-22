@@ -1,8 +1,8 @@
-body {
-    margin: 0px;
+hr {
+     border: 0.05rem solid;
 }
 
-hr {
+.hr-side-info {
     margin: 3% 15%;
     border: 0.05rem solid;
 }
@@ -23,71 +23,79 @@ hr {
     margin-left: 0.4rem;
 }
 
-.sidebar {
-    margin: 0;
-    padding: 0;
-    width: 30vh;
-    height: 100vh;
-    background-color: #0c4574;
-    color: #ffffff;
-    position: fixed;
-    overflow: auto;
-}
-
-.content {
-    width: auto;
-    height: 100vh;
-    margin-left: 32vh;
-    overflow-y: auto;
-    color: #000000;
-}
-
-@media screen and (max-width: 700px) {
-    .sidebar {
-        width: 100%;
-        height: auto;
-        position: relative;
-    }
-
-    .content {
-        width: auto;
-        overflow-y: auto;
-        margin-left: 3vh;
-        color: #000000;
-    }
-
-}
-
 .text-center {
     text-align: center;
-}
-
-.profile {
-    text-align: center;
-    margin: 3% 10%;
-}
-
-.profile img {
-    background-color: #ffffff;
-    border: 1px solid;
-    border-radius: 50%;
-
-    width: 100%;
-    max-width: 400px;
-    height: auto;
 }
 
 .name {
     font-size: 1.2rem;
 }
 
-.info {}
-
 .title {
     font-weight: 800;
     font-size: 1.2rem;
 }
 
-.year {}
+a {
+    color: #000000;
+    text-decoration: none;
+    text-decoration-line: none;
+}
 
-.company {}
+a:link { color: #000000; }
+a:visited { color: #000000; }
+a:hover {
+    color: #000000;
+    text-decoration: none;
+    text-decoration-line: none;
+ }
+
+.readme-bg {
+    background-color: #ffffff;
+    border: 1px solid #7e7e7e;
+    border-radius: 2%;
+    padding: 3% 3%;
+}
+
+.skill-bg {
+    background-color: #e4f1ff;
+    border-radius: 2%;
+    padding: 3% 3%;
+}
+
+.pl-0 {
+    padding-left: 0px;
+}
+
+.side-info-detail {
+    margin-left: 10px;
+}
+
+.sidebar-profile {
+    display: grid;
+}
+
+/* 상단으로 이동 버튼 스타일 */
+.scroll-to-top {
+    display: none; /* 페이지 최상단에서 숨김 */
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #babbbc5c;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    padding: 15px 20px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.scroll-to-top:hover {
+    background-color: #717171b3; /* 호버 시 색상 변경 가능 */
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
