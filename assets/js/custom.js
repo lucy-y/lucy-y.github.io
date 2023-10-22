@@ -9,7 +9,7 @@ var profile = {
 
         window.addEventListener('scroll', function() {
             let button = document.querySelector('.scroll-to-top');
-            if (window.scrollY > 0) { 
+            if (window.scrollY > 10) { 
                 button.style.display = 'block';
             } else {
                 button.style.display = 'none';
