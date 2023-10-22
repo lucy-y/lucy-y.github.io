@@ -9,7 +9,7 @@ var profile = {
 
         window.addEventListener('scroll', function() {
             let button = document.querySelector('.scroll-to-top');
-            if (window.scrollY > 120) { // 스크롤 위치가 100px 이상일 때 버튼 표시
+            if (window.scrollY > 0) { 
                 button.style.display = 'block';
             } else {
                 button.style.display = 'none';
