@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 <!DOCTYPE html>
 <html>
 <head>
@@ -24,11 +23,11 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
-    <link rel="stylesheet" type="text/css" href="css/custom.css">
-    <link rel="stylesheet" type="text/css" href="css/responsive.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/custom.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/responsive.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 
-    <link rel="icon" type="image/x-icon" href="assets/images/profile2.png">
+    <link rel="icon" type="image/x-icon" href="favicon.png">
 </head>
 <body>
         <!-- side div start -->
@@ -167,79 +166,6 @@
         </div>
         <!-- content div end -->
     </div>
-    <script type="text/javascript">
-        $(document).ready(function() {
-            profile.get();
-
-            const moveTopBtn = document.querySelector(".scroll-to-top");
-            moveTopBtn.addEventListener("click", scrollToTop);
-
-            window.addEventListener('scroll', function() {
-                let button = document.querySelector('.scroll-to-top');
-                if (window.scrollY > 120) { // 스크롤 위치가 100px 이상일 때 버튼 표시
-                    button.style.display = 'block';
-                } else {
-                    button.style.display = 'none';
-                }
-            });
-        });
-        
-        function scrollToTop() {
-            $(window).scrollTop(0);
-        }
-        
-        var profile = {
-            get: function(){
-                fetch('assets/json/profile.json')
-                .then(response => {
-                    if (!response.ok) {
-                        throw new Error('Network response was not ok');
-                    }
-                    return response.json();
-                })
-                .then(data => {
-                    profile.setGithub(data.github);
-                    profile.setProject(data.company);
-                })
-                .catch(error => {
-                    console.error('파일 로드 중 오류 발생:', error);
-                });
-            },
-            setGithub: function(url){
-                const github = document.getElementById("github");
-                let link = document.createElement("a");
-                link.textContent = "Github";
-                link.href = url;
-                link.target="_blank";
-                link.style="color: #ffffff";
-                github.appendChild(link);
-            },
-            setProject(projects){
-                const projectDiv = document.getElementById("projectDiv");
-                let companyDiv = document.createElement("div");
-                let html = "<ol>";
-                projects.forEach(f=>{
-                    let company = f.name;
-                    html += "<li>"
-                    html += company;
-                    html += "<ul>";
-                    f.project.forEach(p=>{
-                        html += "<li>";
-                        html += p.name;
-                        html += "</li>"
-                    })
-                    html += "</ul>";
-                    html += "</li>"
-                    
-                })
-                html += "</ol>"
-                companyDiv.innerHTML = html;
-                projectDiv.appendChild(companyDiv);
-            }
-        }
-    </script>
+    <script type="text/javascript" src="/assets/js/custom.js"></script>
 </body>
 </html>
-=======
-<!DOCTYPE html><html><head><meta charset=utf-8><link rel=icon type=image/png sizes=96x96 href=/favicon.png><meta http-equiv=X-UA-Compatible content="IE=edge,chrome=1"><title>Lucy's Profile</title><meta name=viewport content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0"><link rel=stylesheet href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700"><link rel=stylesheet href=https://use.fontawesome.com/releases/v5.6.3/css/all.css integrity=sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/ crossorigin=anonymous><link href=/css/demo.1c111869.css rel=prefetch><link href=/js/demo.24e99ea5.js rel=prefetch><link href=/css/app.8fefa1c5.css rel=preload as=style><link href=/css/chunk-vendors.906899b6.css rel=preload as=style><link href=/js/app.b67c3c98.js rel=preload as=script><link href=/js/chunk-vendors.7072324f.js rel=preload as=script><link href=/css/chunk-vendors.906899b6.css rel=stylesheet><link href=/css/app.8fefa1c5.css rel=stylesheet></head><body><div class=wrapper id=app></div><script src=/js/chunk-vendors.7072324f.js></script><script src=/js/app.b67c3c98.js></script></body></html>
->>>>>>> 6c6c8d43dcd3eb4712a0720aa52b91635055f5dd

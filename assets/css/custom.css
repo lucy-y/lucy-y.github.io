@@ -1,0 +1,101 @@
+hr {
+    border: 0.05rem solid;
+}
+
+.hr-side-info {
+   margin: 3% 15%;
+   border: 0.05rem solid;
+}
+
+.flex {
+   display: flex;
+}
+
+.grid {
+   display: grid;
+}
+
+.mt-4 {
+   margin-top: 0.4rem;
+}
+
+.ml-4 {
+   margin-left: 0.4rem;
+}
+
+.text-center {
+   text-align: center;
+}
+
+.name {
+   font-size: 1.2rem;
+}
+
+.title {
+   font-weight: 800;
+   font-size: 1.2rem;
+}
+
+a {
+   color: #000000;
+   text-decoration: none;
+   text-decoration-line: none;
+}
+
+a:link { color: #000000; }
+a:visited { color: #000000; }
+a:hover {
+   color: #000000;
+   text-decoration: none;
+   text-decoration-line: none;
+}
+
+.readme-bg {
+   background-color: #ffffff;
+   border: 1px solid #7e7e7e;
+   border-radius: 2%;
+   padding: 3% 3%;
+}
+
+.skill-bg {
+   background-color: #e4f1ff;
+   border-radius: 2%;
+   padding: 3% 3%;
+}
+
+.pl-0 {
+   padding-left: 0px;
+}
+
+.side-info-detail {
+   margin-left: 10px;
+}
+
+.sidebar-profile {
+   display: grid;
+}
+
+/* 상단으로 이동 버튼 스타일 */
+.scroll-to-top {
+   display: none; /* 페이지 최상단에서 숨김 */
+   position: fixed;
+   bottom: 20px;
+   right: 20px;
+   background-color: #babbbc5c;
+   color: #fff;
+   border: none;
+   border-radius: 50%;
+   padding: 15px 20px;
+   text-align: center;
+   text-decoration: none;
+   font-size: 16px;
+   cursor: pointer;
+}
+
+.scroll-to-top:hover {
+   background-color: #717171b3; /* 호버 시 색상 변경 가능 */
+}
+
+.uppercase {
+   text-transform: uppercase;
+}
