@@ -1,0 +1,119 @@
+.graph {
+    width: 100%;
+    height: 120px;
+    position: relative;
+    border-bottom: 1px solid #000;
+    margin-bottom: 50px;
+}
+
+.area {
+    position: absolute;
+    width: 100%;
+    opacity: 0.5;
+    background-color: rgb(123, 123, 123);
+    transition: transform 0.3s ease;
+}
+
+.area:hover {
+    transform: scale(1.1);
+}
+
+.area:nth-of-type(1) {
+    background-color: #FF6F61;
+}
+
+.area:nth-of-type(2) {
+    background-color: #FF9A8B;
+}
+
+.area:nth-of-type(3) {
+    background-color: #FFB84D;
+}
+
+.area:nth-of-type(4) {
+    background-color: #7FDBB6;
+}
+
+.area:nth-of-type(5) {
+    background-color: #4F92D1;
+}
+
+.area:nth-of-type(6) {
+    background-color: #9B7FD4;
+}
+
+.area:nth-of-type(7) {
+    background-color: #FF80BF;
+}
+
+.area:nth-of-type(8) {
+    background-color: #7AC943;
+}
+
+.area {
+    border-left: 1px solid rgb(0, 0, 0);
+}
+
+.area p {
+    position: absolute;
+    top: -30px;
+    left: -0.5px;
+    height: 31px;
+    font-size: 10px;
+    white-space: nowrap;
+    text-indent: 1px;
+    border-left: 1px solid rgb(0, 0, 0);
+}
+
+.tick,
+.year {
+    position: absolute;
+    font-size: 8px !important;
+    text-align: center;
+    bottom: -15px;
+    -webkit-text-size-adjust: none;
+    -moz-text-size-adjust: none;
+    -ms-text-size-adjust: none;
+    text-size-adjust: none;
+}
+
+.tick {
+    height: 15px;
+    border-left: 1px solid #000;
+}
+
+.year {
+    color: #bbb;
+    text-indent: 8px;
+}
+
+@media print {
+    .area {
+        position: absolute;
+        width: 100%;
+        opacity: 1 !important;
+        filter: opacity(1) !important;
+        -webkit-print-color-adjust: exact;
+        color-adjust: exact;
+    }
+
+    .area:nth-of-type(1) {
+        background-color: rgb(255, 113, 113);
+    }
+
+    .area:nth-of-type(2) {
+        background-color: rgb(119, 119, 253);
+    }
+
+    .area:nth-of-type(3) {
+        background-color: rgb(95, 199, 95);
+    }
+
+    .area:nth-of-type(4) {
+        background-color: rgb(211, 100, 202);
+    }
+
+    .area:nth-of-type(5) {
+        background-color: rgb(230, 186, 105);
+    }
+}

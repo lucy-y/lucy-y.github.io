@@ -1,0 +1,70 @@
+/* 
+수정중
+https://www.w3schools.com/css/css_rwd_mediaqueries.asp
+*/
+
+/* 뷰포트의 가로너비가 768, 1025px 이상인 경우 적용 : 태블릿, 데스크탑 환경 */
+@media screen and (min-width: 768px) {
+    .img-profile {
+        width: 100%;
+        max-width: 400px;
+    } 
+    
+    .sidebar {
+        margin: 0;
+        padding: 0;
+        width: 32vh;
+        height: 100vh;
+        background-color: #0c4574;
+        color: #ffffff;
+        position: fixed;
+        overflow: auto;
+    }
+
+    .sidebar-profile {
+        display: flex;
+    }
+    
+    .content {
+        width: auto;
+        height: 100vh;
+        margin-left: 32vh;
+        overflow-y: auto;
+        color: #000000;
+        background-color: #ffffff;
+    }
+}
+
+/* 뷰포트의 가로너비가 768px 이하인 경우 적용 : 모바일 환경 */
+@media screen and (min-width: 768px) {
+    .sidebar {
+        position: fixed;
+        overflow: auto;
+    }
+
+    .sidebar-profile {
+        display: grid;
+    }
+}
+
+.img-profile {
+    background-color: #ffffff;
+    border: 1px solid;
+    border-radius: 50%;
+
+    width: 100%;
+    max-width: 100px;
+    height: auto;
+}
+
+.sidebar {
+    background-color: #0c4574;
+    color: #ffffff;
+}
+
+.content {
+    padding: 10px 10px;
+    background-color: #e7e7e7;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
